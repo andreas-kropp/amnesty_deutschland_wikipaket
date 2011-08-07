@@ -11,7 +11,7 @@ $EnablePathInfo = 1; # Die Adresse im Browser wird von "http://www.amnesty.orsch
 putenv("TZ=CET-1CEST"); # Mitteleuropäische Zeit
 $TimeFmt = '%d. %B %Y, um %H:%M Uhr'; # Das Format, in dem Datum und Uhrzeit angezeigt werden.
 
-XLPage('de','PmWikiDe.XLPage'); # Aktiviert die deutsche Übersetzung des Wikis inl. der Hilfsseiten
+XLPage('de','PmWikiDe.XLPage'); # Aktiviert die deutsche Übersetzung des Wikis inkl. der Hilfsseiten
 XLPage('de','PmWikiDe.XLPageCookbook'); # Aktiviert mögliche deutsche Übersetzungen der Rezepte s.u.
 
 $DefaultName = 'Start'; # Die Startseite in jeder Gruppe heißt "Start". Die Standardeinstellung ist "HomePage".
@@ -150,6 +150,12 @@ include_once("$FarmD/cookbook/attachdel.php");
 # http://www.pmwiki.org/wiki/Cookbook/Flash
 
 include_once("$FarmD/cookbook/swf-sites.php");
+
+# tags #
+# Ermöglicht das Taggen von Seiten
+# http://www.pmwiki.org/wiki/Cookbook/Tags
+
+include_once("$FarmD/cookbook/tags.php");
 
 # Site Analyzer #
 # Ermöglicht die Überprüfung der Versionen der verwendeten Software und der Rezept auf der Seite von pmwiki
